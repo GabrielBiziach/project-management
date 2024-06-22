@@ -1,5 +1,3 @@
-# project-management
-
 # Project Management
 
 Este é um sistema de gerenciamento de projetos desenvolvido em Java utilizando Spring MVC, Hibernate, e PostgreSQL. O projeto segue o padrão de arquitetura MVC (Model-View-Controller).
