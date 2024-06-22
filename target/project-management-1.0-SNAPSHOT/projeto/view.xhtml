@@ -1,0 +1,28 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Detalhes do Projeto</title>
+</head>
+<body>
+    <h2>Detalhes do Projeto</h2>
+    <table>
+        <tr>
+            <td>ID:</td>
+            <td>${projeto.id}</td>
+        </tr>
+        <tr>
+            <td>Título:</td>
+            <td>${projeto.titulo}</td>
+        </tr>
+        <tr>
+            <td>Descrição:</td>
+            <td>${projeto.descricao}</td>
+        </tr>
+        <tr>
+            <td>Data de Início:</td>
+            <td>${projeto.dataInicio}</td>
+        </tr>
+    </table>
+    <a href="${pageContext.request.contextPath}/projeto/list">Voltar para a Lista</a>
+</body>
+</html>

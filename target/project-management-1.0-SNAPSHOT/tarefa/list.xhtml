@@ -1,0 +1,40 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
+<head>
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <h2>Lista de Tarefas</h2>
+    <a href="${pageContext.request.contextPath}/tarefa/form">Nova Tarefa</a>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Descrição</th>
+                <th>Data de Início</th>
+                <th>Data de Conclusão</th>
+                <th>Projeto</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <c:forEach var="tarefa" items="${tarefas}">
+                <tr>
+                    <td>${tarefa.id}</td>
+                    <td>${tarefa.titulo}</td>
+                    <td>${tarefa.descricao}</td>
+                    <td>${tarefa.dataInicio}</td>
+                    <td>${tarefa.dataConclusao}</td>
+                    <td>${tarefa.projeto.titulo}</td>
+                    <td>
+                        <a href="${pageContext.request.contextPath}/tarefa/view/${tarefa.id}">Visualizar</a>
+                        <a href="${pageContext.request.contextPath}/tarefa/delete/${tarefa.id}">Excluir</a>
+                    </td>
+                </tr>
+            </c:forEach>
+        </tbody>
+    </table>
+</body>
+</html>

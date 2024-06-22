@@ -1,0 +1,9 @@
+com\example\projectmanagement\controller\ProjetoController.class
+com\example\projectmanagement\service\ProjetoService.class
+com\example\projectmanagement\controller\TarefaController.class
+com\example\projectmanagement\repository\TarefaRepository.class
+com\example\projectmanagement\entity\Tarefa$Prioridade.class
+com\example\projectmanagement\entity\Projeto.class
+com\example\projectmanagement\entity\Tarefa.class
+com\example\projectmanagement\repository\ProjetoRepository.class
+com\example\projectmanagement\service\TarefaService.class
